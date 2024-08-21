@@ -1,0 +1,11 @@
+{
+  "__comment1__": "SPDX-FileCopyrightText: 2022-2024 TII (SSRC) and the Ghaf contributors",
+  "__comment2__": "SPDX-License-Identifier: Apache-2.0",
+  "name": "fi.ssrc.open_trusted",
+  "description": "Open link in trusted browser",
+  "path": "/home/tervis/browserscript/open_trusted.sh",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://knkejenhjfilckcnlilpibihodombkpd/"
+  ]
+}
