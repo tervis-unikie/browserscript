@@ -3,9 +3,9 @@
   "__comment2__": "SPDX-License-Identifier: Apache-2.0",
   "name": "fi.ssrc.open_trusted",
   "description": "Open link in trusted browser",
-  "path": "/home/tervis/browserscript/open_trusted.sh",
+  "path": "/home/ghaf/open_trusted/open_trusted.sh",
   "type": "stdio",
   "allowed_origins": [
-    "chrome-extension://knkejenhjfilckcnlilpibihodombkpd/"
+    "chrome-extension://ehlgfonodkljjbpedhnphehcflbohngk/"
   ]
 }

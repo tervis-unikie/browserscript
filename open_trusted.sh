@@ -2,7 +2,8 @@
 # SPDX-FileCopyrightText: 2022-2024 TII (SSRC) and the Ghaf contributors
 # SPDX-License-Identifier: Apache-2.0
 
-LOG="open_trusted.sh.log"
+BASE="/home/ghaf/open_trusted"
+LOG="${BASE}/open_trusted.sh.log"
 
 function Ord {
     printf "%d" "\"$1"
@@ -69,5 +70,7 @@ URL="${JSON##"$PFX"}"
 SFX="\"}"
 URL="${URL%%"$SFX"}"
 echo "$URL" >> "$LOG"
+
+ssh -o StrictHostKeyChecking=no business-vm "run-waypipe chromium --enable-features=UseOzonePlatform --ozone-platform=wayland \"${URL}\""
 
 Msg "{\"status\":\"Ok\"}"
